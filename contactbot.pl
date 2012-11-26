@@ -208,9 +208,9 @@ sub public {
 		$lulzprob += 0.25 if $lulzprob < 1;
 		Irssi::print "caught more lulz; now $lulzprob";
 	}
-	if ($msg =~ /^less lulz/i && $tome) {
+	if ($msg =~ /^fewer lulz/i && $tome) {
 		$lulzprob -= 0.25 if $lulzprob > 0;
-		Irssi::print "caught less lulz; now $lulzprob";
+		Irssi::print "caught fewer lulz; now $lulzprob";
 	}
 }
 
@@ -241,7 +241,7 @@ wm, wordmaster -- show who the wordmaster is (it's whoever last set the topic)
 not, it is not, it's not, it isn't, isn't, nor -- when said by the wordmaster, search the line for words that match the prefix, and remember them as used
 used -- show words that have been used
 help -- show this whole thing (must be addressed to me)
-moar lulz, more lulz, less lulz -- should be obvious! (must be addressed to me)
+moar lulz, more lulz, fewer lulz -- should be obvious! (must be addressed to me)
 A description of the game of Contact is available at http://tinyurl.com/contactrules
 EOF
 		$server->send_message($nick, $_, 1) foreach split "\n", $helpmsg;
