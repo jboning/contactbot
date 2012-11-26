@@ -242,7 +242,7 @@ not, it is not, it's not, it isn't, isn't, nor -- when said by the wordmaster, s
 used -- show words that have been used
 help -- show this whole thing (must be addressed to me)
 moar lulz, more lulz, fewer lulz -- should be obvious! (must be addressed to me)
-A description of the game of Contact is available at http://tinyurl.com/contactrules
+A description of the game of Contact is available at http://mrwright.name/contact.txt
 EOF
 		$server->send_message($nick, $_, 1) foreach split "\n", $helpmsg;
 	}
